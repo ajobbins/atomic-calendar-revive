@@ -246,7 +246,8 @@ export default class EventClass {
 	}
 
 	get title() {
-		return this.rawEvent.summary;
+		if (this.rawEvent.summary = "") return 'Work';
+		else return this.rawEvent.summary;
 	}
 
 	get description() {
